@@ -1,16 +1,72 @@
 import { FC, ReactElement } from "react";
+import { Link } from "react-router-dom";
+import WorkExperienceCard from "../components/Cards/WorkExperienceCard";
 
 const Homepage: FC = (): ReactElement => {
   return (
-    <div className="flex ">
-      <h1>Julian Nicolas Magra</h1>
-      <h3>Welcome to the home page!</h3>
-      <h3>My name is Julian and we can do a lot of things together!</h3>
-      <h3>Follow me to know more about me and my services.</h3>
-      {/* Algun director de la atencion que guie a la persona al click que lo lleve hacia la nueva pagina */}
-      <p>Resume/CV</p>
-      <p>Carrousel abajo exponiendo las redes.</p>
-    </div>
+    <main className="flex items-center justify-center content-center flex-wrap flex-col flex-grow-0">
+      <section className="bg-orange-100 flex  flex-col">
+        <div>
+          <h1> Front end developer</h1>
+        </div>
+        <div>
+          <p>
+            I'm Julian Magra, a frontend developer passionate about learning and
+            working on projects that can be beneficial to the world at large.
+          </p>
+        </div>
+        <p>See more and discover we can do a lot together!</p>
+
+        <div>
+          <Link target="_blank" to={"https://github.com/julianmagra"}>
+            GitHub
+          </Link>
+          <Link target="_blank" to={"https://gitlab.com/julianmagra"}>
+            Gitlab
+          </Link>
+          <Link target="_blank" to={"https://www.linkedin.com/in/julianmagra/"}>
+            Linkedin
+          </Link>
+          <Link target="_blank" to={"https://twitter.com/JulianNicolas26"}>
+            X
+          </Link>
+          <Link target="_blank" to={"https://www.instagram.com/julianmagra/"}>
+            Instagram
+          </Link>
+          <Link target="_blank" to={"https://www.youtube.com/@julianmagra"}>
+            Youtube
+          </Link>
+          <Link
+            target="_blank"
+            to={
+              "https://stackoverflow.com/users/24884113/julian-nicolas-magra?tab=profile"
+            }
+          >
+            StackOverflow
+          </Link>
+          {/*   Codepen Dribbble Steam Unsplash Daily.dev Producthunt Stackoverflow
+          Codewars */}
+        </div>
+        {/* <p>Resume/CV</p>
+        <p>Carrousel abajo exponiendo las redes.</p> */}
+      </section>
+      <section className="bg-indigo-400  flex   items-center flex-col ">
+        <div>
+          <h3>Work experience</h3>
+        </div>
+        <div>
+          <WorkExperienceCard />
+        </div>
+      </section>
+      <section className=" bg-yellow-300 flex">
+        <div>
+          <p>built with: react - tailwind - 'vercel'</p>
+        </div>
+        <div>
+          <p>Copyright © Julian Magra 2024 All rights Reserved</p>
+        </div>
+      </section>
+    </main>
   );
 };
 

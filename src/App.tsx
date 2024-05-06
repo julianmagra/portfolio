@@ -4,9 +4,11 @@ import PublicRoutes from "./router/PublicRoutes";
 
 const App = () => {
   return (
-    <div className="bg">
+    <div className="min-h-screen ">
       <Appbar />
-      <PublicRoutes />
+      <div className=" max-w-screen-2xl bg-gray-200 mx-auto flex min-h-screen">
+        <PublicRoutes />
+      </div>
     </div>
   );
 };
