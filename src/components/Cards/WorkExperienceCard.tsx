@@ -13,6 +13,7 @@ const WORK_EXPERIENCE_INFO: WORK_EXPERIENCE_INFO_TYPES = {
 };
 
 const WorkExperienceCard = () => {
+  console.log(WORK_EXPERIENCE_INFO);
   return (
     <>
       <div className="max-w-md mx-auto bg-white rounded-xl overflow-hidden shadow-md border border-gray-400 p-6">

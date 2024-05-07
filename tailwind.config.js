@@ -6,6 +6,9 @@ export default {
       backgroundImage: {
         buildingBg: `url('./public/constructingTowerOfPower.png')`,
       },
+      screens: {
+        "2xl": "1536px", // Define el tamaño de pantalla 2xl según sea necesario
+      },
     },
   },
   plugins: [],
