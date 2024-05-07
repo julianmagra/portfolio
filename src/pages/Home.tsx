@@ -50,11 +50,11 @@ const Homepage: FC = (): ReactElement => {
         {/* <p>Resume/CV</p>
         <p>Carrousel abajo exponiendo las redes.</p> */}
       </section>
-      <section className="bg-indigo-400  flex   items-center flex-col ">
+      <section className="flex flex-col  mt-3 mb-3  ">
         <div>
           <h3>Work experience</h3>
         </div>
-        <div>
+        <div className="">
           <WorkExperienceCard />
         </div>
       </section>
