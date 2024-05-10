@@ -7,6 +7,10 @@ export default {
         buildingBg: `url('./public/constructingTowerOfPower.png')`,
       },
       screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
         "2xl": "1536px", // Define el tamaño de pantalla 2xl según sea necesario
       },
     },
