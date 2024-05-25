@@ -28,7 +28,10 @@ const PROJECTS: CardProps[] = [
 ];
 
 const ProjectArea = () => (
-  <>
+  <div>
+    <div className="text-left">
+      <h2 className="srcCodeTypo">Project</h2>
+    </div>
     {PROJECTS.map((project, index) => (
       <ProjectCard
         key={index}
@@ -39,6 +42,6 @@ const ProjectArea = () => (
         preview={project.preview}
       />
     ))}
-  </>
+  </div>
 );
 export default ProjectArea;

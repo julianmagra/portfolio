@@ -3,27 +3,29 @@ import { Link } from "react-router-dom";
 import "./styles.css";
 import { ExperienceTimeline } from "../components/Icons/ExperienceTimeline";
 import ProjectArea from "../components/layout/ProjectArea";
-//Opcion espanol/ingles
+import AboutMe from "../components/layout/AboutMe";
+//English/spanish option
+//Check folder structure
 const Homepage: FC = (): ReactElement => {
   return (
     <main className="flex  flex-col max-w-7xl mx-auto p-5 text-gray-700 ">
       <section className="p-2 interTypo flex flex-col lg:flex-row mt-10 ">
-        <div>
+        <div className="">
           <div className="text-left  lg:max-w-prose  ">
             <h1 className="srcCodeTypo text-4xl sm:text-3xl md:text-2xl lg:text-xl xl:text-lg font-bold ">
               Front end developer
             </h1>
-            <p className="text-left  mt-10 ">
+            <p className="text-left  mt-10 pl-4 pt-4">
               I'm Julian Magra, + 2 years of experience as a frontend developer.
               I'm passionate about learning and working on projects that can be
               beneficial to the world at large.
             </p>
-            <p className="text-left mt-2">
+            <p className="text-left mt-2 pl-6 pt-4 ">
               See more and discover we can do a lot together!
             </p>
           </div>
 
-          <div className=" flex flex-wrap mt-6">
+          <div className=" flex flex-wrap mt-6 pl-4">
             <Link
               target="_blank"
               to={"https://github.com/julianmagra"}
@@ -99,12 +101,10 @@ const Homepage: FC = (): ReactElement => {
         </div> */}
       </section>
       <section>
-        <div>
-          <div className="text-left">
-            <h2 className="srcCodeTypo">Project</h2>
-          </div>
-          <ProjectArea />
-        </div>
+        <ProjectArea />
+      </section>
+      <section>
+        <AboutMe />
       </section>
       <section className="interTypo  mt-40 ">
         <div>
