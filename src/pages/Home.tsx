@@ -1,69 +1,122 @@
 import { FC, ReactElement } from "react";
 import { Link } from "react-router-dom";
-import WorkExperienceCard from "../components/Cards/WorkExperienceCard";
-
+import "./styles.css";
+import { ExperienceTimeline } from "../components/Icons/ExperienceTimeline";
+import ProjectArea from "../components/layout/ProjectArea";
+//Opcion espanol/ingles
 const Homepage: FC = (): ReactElement => {
   return (
-    <main className="flex items-center justify-center content-center flex-wrap flex-col flex-grow-0">
-      <section className="bg-orange-100 flex  flex-col">
+    <main className="flex  flex-col max-w-7xl mx-auto p-5 text-gray-700 ">
+      <section className="p-2 interTypo flex flex-col lg:flex-row mt-10 ">
         <div>
-          <h1> Front end developer</h1>
-        </div>
-        <div>
-          <p>
-            I'm Julian Magra, a frontend developer passionate about learning and
-            working on projects that can be beneficial to the world at large.
-          </p>
-        </div>
-        <p>See more and discover we can do a lot together!</p>
+          <div className="text-left  lg:max-w-prose  ">
+            <h1 className="srcCodeTypo text-4xl sm:text-3xl md:text-2xl lg:text-xl xl:text-lg font-bold ">
+              Front end developer
+            </h1>
+            <p className="text-left  mt-10 ">
+              I'm Julian Magra, + 2 years of experience as a frontend developer.
+              I'm passionate about learning and working on projects that can be
+              beneficial to the world at large.
+            </p>
+            <p className="text-left mt-2">
+              See more and discover we can do a lot together!
+            </p>
+          </div>
 
-        <div>
-          <Link target="_blank" to={"https://github.com/julianmagra"}>
-            GitHub
-          </Link>
-          <Link target="_blank" to={"https://gitlab.com/julianmagra"}>
-            Gitlab
-          </Link>
-          <Link target="_blank" to={"https://www.linkedin.com/in/julianmagra/"}>
-            Linkedin
-          </Link>
-          <Link target="_blank" to={"https://twitter.com/JulianNicolas26"}>
-            X
-          </Link>
-          <Link target="_blank" to={"https://www.instagram.com/julianmagra/"}>
-            Instagram
-          </Link>
-          <Link target="_blank" to={"https://www.youtube.com/@julianmagra"}>
-            Youtube
-          </Link>
-          <Link
-            target="_blank"
-            to={
-              "https://stackoverflow.com/users/24884113/julian-nicolas-magra?tab=profile"
-            }
-          >
-            StackOverflow
-          </Link>
-          {/*   Codepen Dribbble Steam Unsplash Daily.dev Producthunt Stackoverflow
+          <div className=" flex flex-wrap mt-6">
+            <Link
+              target="_blank"
+              to={"https://github.com/julianmagra"}
+              className=" p-2 bg-slate-200 mx-1 rounded-md  shadow-md  border-b border-b-gray-300  "
+            >
+              GitHub
+            </Link>
+            <Link
+              target="_blank"
+              to={"https://gitlab.com/julianmagra"}
+              className="p-2 bg-slate-200 mx-1 rounded-md  shadow-md  border-b border-b-gray-300  "
+            >
+              Gitlab
+            </Link>
+            <Link
+              target="_blank"
+              to={"https://www.linkedin.com/in/julianmagra"}
+              className="p-2 bg-slate-200 mx-1 rounded-md  shadow-md  border-b border-b-gray-300  "
+            >
+              Linkedin
+            </Link>
+            <Link
+              target="_blank"
+              to={"https://twitter.com/JulianNicolas26"}
+              className="p-2 bg-slate-200 mx-1 rounded-md  shadow-md  border-b border-b-gray-300  "
+            >
+              X
+            </Link>
+            <Link
+              target="_blank"
+              to={"https://www.instagram.com/julianmagra"}
+              className="p-2 bg-slate-200 mx-1 rounded-md  shadow-md  border-b border-b-gray-300  "
+            >
+              Instagram
+            </Link>
+            <Link
+              target="_blank"
+              to={"https://www.youtube.com/@julianmagra"}
+              className="p-2 bg-slate-200 mx-1 rounded-md  shadow-md  border-b border-b-gray-300  "
+            >
+              Youtube
+            </Link>
+            <Link
+              target="_blank"
+              to={
+                "https://stackoverflow.com/users/24884113/julian-nicolas-magra?tab=profile"
+              }
+              className="p-2 bg-slate-200 mx-1 rounded-md  shadow-md  border-b border-b-gray-300  "
+            >
+              StackOverflow
+            </Link>
+            {/*   Codepen Dribbble Steam Unsplash Daily.dev Producthunt Stackoverflow
           Codewars */}
+          </div>
+        </div>
+        <div className="mt-10 xl:mt-4 lg:mt-4">
+          <img
+            src="../../public/modul-monitor-with-programming-code-on-screen.png"
+            alt=""
+            className=" xl:w-full lg:w-full lg:h-full mx-auto"
+          />
         </div>
         {/* <p>Resume/CV</p>
         <p>Carrousel abajo exponiendo las redes.</p> */}
       </section>
-      <section className="flex flex-col  mt-3 mb-3  ">
-        <div>
-          <h3>Work experience</h3>
+      <section className=" p-2 interTypo flex flex-col lg:flex-row mt-10 flex-wrap">
+        <div className="text-left">
+          <h2 className="srcCodeTypo">Work experience</h2>
         </div>
-        <div className="">
-          <WorkExperienceCard />
+        <ExperienceTimeline />
+        {/*      <div className="mt-10">
+          <WorkExperienceCard /> esto deberia estar dentro del layout de workExperienceArea, asi como el timeline
+        </div> */}
+      </section>
+      <section>
+        <div>
+          <div className="text-left">
+            <h2 className="srcCodeTypo">Project</h2>
+          </div>
+          <ProjectArea />
         </div>
       </section>
-      <section className=" bg-yellow-300 flex">
+      <section className="interTypo  mt-40 ">
         <div>
-          <p>built with: react - tailwind - 'vercel'</p>
+          <p>Built with:</p>
         </div>
         <div>
-          <p>Copyright © Julian Magra 2024 All rights Reserved</p>
+          <p> react - tailwind - 'vercel'</p>
+        </div>
+        <div>
+          <p className="text-xs">
+            Copyright © Julian Magra 2024 All rights Reserved
+          </p>
         </div>
       </section>
     </main>
