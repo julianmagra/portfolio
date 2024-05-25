@@ -1,15 +1,9 @@
 import { Link } from "react-router-dom";
 import { SVG_ATTACH_PATH } from "../../assets/Attach";
 import { SVG_GHUB_PATH } from "../../assets/Github";
+import { CardProps } from "../layout/ProjectArea";
 
-interface ProjectCardProps {
-  title: string;
-  techs: string[];
-  description: string;
-  ghub: string;
-  preview: string;
-}
-const ProjectCard: React.FC<ProjectCardProps> = ({
+const ProjectCard: React.FC<CardProps> = ({
   title,
   techs,
   description,

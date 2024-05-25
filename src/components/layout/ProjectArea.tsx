@@ -1,6 +1,6 @@
 import ProjectCard from "../Cards/ProjectCard";
 
-interface CardProps {
+export interface CardProps {
   title: string;
   techs: string[];
   description: string;
