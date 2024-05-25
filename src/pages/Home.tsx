@@ -2,7 +2,8 @@ import { FC, ReactElement } from "react";
 import { Link } from "react-router-dom";
 import "./styles.css";
 import { ExperienceTimeline } from "../components/Icons/ExperienceTimeline";
-
+import ProjectArea from "../components/layout/ProjectArea";
+//Opcion espanol/ingles
 const Homepage: FC = (): ReactElement => {
   return (
     <main className="flex  flex-col max-w-7xl mx-auto p-5 text-gray-700 ">
@@ -90,12 +91,20 @@ const Homepage: FC = (): ReactElement => {
       </section>
       <section className=" p-2 interTypo flex flex-col lg:flex-row mt-10 flex-wrap">
         <div className="text-left">
-          <h3 className="srcCodeTypo">Work experience</h3>
+          <h2 className="srcCodeTypo">Work experience</h2>
         </div>
         <ExperienceTimeline />
         {/*      <div className="mt-10">
-          <WorkExperienceCard />
+          <WorkExperienceCard /> esto deberia estar dentro del layout de workExperienceArea, asi como el timeline
         </div> */}
+      </section>
+      <section>
+        <div>
+          <div className="text-left">
+            <h2 className="srcCodeTypo">Project</h2>
+          </div>
+          <ProjectArea />
+        </div>
       </section>
       <section className="interTypo  mt-40 ">
         <div>
