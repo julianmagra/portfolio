@@ -4,7 +4,7 @@ const Footer = () => {
       <p className="text-sm">
         Copyright © Julian Magra 2024 All rights Reserved
       </p>
-      <div className="mr-32">
+      <div>
         <button className="text-md mr-8">Resume</button>
         <button className="text-md">Contact</button>
       </div>

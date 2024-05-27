@@ -4,45 +4,26 @@ import { paths } from "../../constants/paths";
 import { SVG_MOON_PATH, SVG_SUN_PATH } from "../../assets/Darkmode";
 import { SVG_BAR_BUTTON } from "../../assets/BarButton";
 
-/* 
-const navLinks = [
-  { title: "Home", path: "/", icon: "" },
-  { title: "About", path: "/about", icon: "" },
-  { title: "Services", path: "/services", icon: "" },
-  { title: "Projects", path: "/projects", icon: "" },
-  { title: "Contact", path: "/contact", icon: "" },
-]; */
-
 const Appbar: FC = (): ReactElement => {
   const [isDarkModeOn, setIsDarkModeOn] = useState(false);
   return (
-    <>
-      <nav className="  border-b border-gray-400 text-gray-600   ">
+    <div className="fixed  flex justify-center w-full  mt-2">
+      <nav className="px-3 text-sm font-medium rounded-full text-gray-500 dark:text-gray-200  shadow-lg  shadow-gray-300 bg-white bg-opacity-80">
         <div className="flex mx-auto justify-between max-w-7xl items-center pl-5 pr-5">
-          <div className=" hover:bg-gray-700  flex">
-            <Link to={paths.navigation.HOME} className="text-2xl ">
-              Julian Magra
-            </Link>
-          </div>
           <div className="hidden lg:flex">
-            <Link
-              to={paths.navigation.ABOUT}
-              className=" py-2 px-4 hover:bg-gray-700"
-            >
-              Social
-            </Link>
-            <Link
-              to={paths.navigation.PROJECTS}
-              className=" py-2 px-4 hover:bg-gray-700"
-            >
+            <a href="#experience" className=" py-2 px-4 hover:text-red-700">
+              Experience
+            </a>
+            <a href="#projects" className=" py-2 px-4 hover:text-red-700">
               Projects
-            </Link>
-            <Link
-              to={paths.navigation.CONTACT}
-              className=" py-2 px-4 hover:bg-gray-700"
-            >
-              Skills
-            </Link>
+            </a>
+            <a href="#aboutme" className=" py-2 px-4 hover:text-red-700">
+              About me
+            </a>
+
+            <a href="#contact" className=" py-2 px-4 hover:text-red-700 ">
+              Contact
+            </a>
           </div>
 
           {/*  TAREA FUTURA: REDUCIR A UN SOLO BOTON QUE VARIE LOS SVG DEPENDIENDO DEL
@@ -88,7 +69,7 @@ const Appbar: FC = (): ReactElement => {
           </div>
         </div>
       </nav>
-    </>
+    </div>
   );
 };
 

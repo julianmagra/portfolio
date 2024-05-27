@@ -9,7 +9,7 @@ const PublicRoutes = () => {
   );
 
   return (
-    <div>
+    <div className="mt-40">
       <Outlet />
     </div>
   );

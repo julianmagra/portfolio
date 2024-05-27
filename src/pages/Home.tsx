@@ -9,14 +9,14 @@ import Footer from "../components/layout/Footer";
 //Check folder structure
 const Homepage: FC = (): ReactElement => {
   return (
-    <main className="flex  flex-col max-w-7xl mx-auto p-5 text-gray-700 ">
+    <main className="flex  flex-col max-w-5xl mx-auto p-5 text-gray-700 ">
       <section className="p-2 interTypo flex flex-col lg:flex-row mt-10 ">
         <div className="">
           <div className="text-left  lg:max-w-prose  ">
             <h1 className="srcCodeTypo text-4xl sm:text-3xl md:text-2xl lg:text-xl xl:text-lg font-bold ">
               Front end developer
             </h1>
-            <p className="text-left  mt-10 pl-4 pt-4">
+            <p className="text-left  mt-10 pl-4 pt-4 ">
               I'm Julian Magra, + 2 years of experience as a frontend developer.
               I'm passionate about learning and working on projects that can be
               beneficial to the world at large.
@@ -29,32 +29,12 @@ const Homepage: FC = (): ReactElement => {
           <div className=" flex flex-wrap mt-6 pl-4">
             <Link
               target="_blank"
-              to={"https://github.com/julianmagra"}
-              className=" p-2 bg-slate-200 mx-1 rounded-md  shadow-md  border-b border-b-gray-300  "
-            >
-              GitHub
-            </Link>
-            <Link
-              target="_blank"
-              to={"https://gitlab.com/julianmagra"}
-              className="p-2 bg-slate-200 mx-1 rounded-md  shadow-md  border-b border-b-gray-300  "
-            >
-              Gitlab
-            </Link>
-            <Link
-              target="_blank"
               to={"https://www.linkedin.com/in/julianmagra"}
               className="p-2 bg-slate-200 mx-1 rounded-md  shadow-md  border-b border-b-gray-300  "
             >
               Linkedin
             </Link>
-            <Link
-              target="_blank"
-              to={"https://twitter.com/JulianNicolas26"}
-              className="p-2 bg-slate-200 mx-1 rounded-md  shadow-md  border-b border-b-gray-300  "
-            >
-              X
-            </Link>
+
             <Link
               target="_blank"
               to={"https://www.instagram.com/julianmagra"}
@@ -62,22 +42,7 @@ const Homepage: FC = (): ReactElement => {
             >
               Instagram
             </Link>
-            <Link
-              target="_blank"
-              to={"https://www.youtube.com/@julianmagra"}
-              className="p-2 bg-slate-200 mx-1 rounded-md  shadow-md  border-b border-b-gray-300  "
-            >
-              Youtube
-            </Link>
-            <Link
-              target="_blank"
-              to={
-                "https://stackoverflow.com/users/24884113/julian-nicolas-magra?tab=profile"
-              }
-              className="p-2 bg-slate-200 mx-1 rounded-md  shadow-md  border-b border-b-gray-300  "
-            >
-              StackOverflow
-            </Link>
+
             {/*   Codepen Dribbble Steam Unsplash Daily.dev Producthunt Stackoverflow
           Codewars */}
           </div>
@@ -92,8 +57,11 @@ const Homepage: FC = (): ReactElement => {
         {/* <p>Resume/CV</p>
         <p>Carrousel abajo exponiendo las redes.</p> */}
       </section>
-      <section className=" p-2 interTypo flex flex-col lg:flex-row mt-10 flex-wrap">
-        <div className="text-left">
+      <section
+        id="experience"
+        className="pt-10 p-2 interTypo flex flex-col lg:flex-row mt-10 flex-wrap"
+      >
+        <div className="text-left ">
           <h2 className="srcCodeTypo">Work experience</h2>
         </div>
         <ExperienceTimeline />
@@ -101,13 +69,13 @@ const Homepage: FC = (): ReactElement => {
           <WorkExperienceCard /> esto deberia estar dentro del layout de workExperienceArea, asi como el timeline
         </div> */}
       </section>
-      <section>
+      <section id="projects" className="pt-10">
         <ProjectArea />
       </section>
-      <section>
+      <section id="aboutme">
         <AboutMe />
       </section>
-      <section className="mt-40 ">
+      <section className="mt-40 " id="contact">
         <Footer />
       </section>
     </main>
