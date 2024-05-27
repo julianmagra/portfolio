@@ -2,8 +2,9 @@ import { FC, ReactElement } from "react";
 import { Link } from "react-router-dom";
 import "./styles.css";
 import { ExperienceTimeline } from "../components/Icons/ExperienceTimeline";
-import ProjectArea from "../components/layout/ProjectArea";
-import AboutMe from "../components/layout/AboutMe";
+import ProjectArea from "../components/layout/Project";
+import AboutMe from "../components/layout/About";
+import Footer from "../components/layout/Footer";
 //English/spanish option
 //Check folder structure
 const Homepage: FC = (): ReactElement => {
@@ -106,18 +107,8 @@ const Homepage: FC = (): ReactElement => {
       <section>
         <AboutMe />
       </section>
-      <section className="interTypo  mt-40 ">
-        <div>
-          <p>Built with:</p>
-        </div>
-        <div>
-          <p> react - tailwind - 'vercel'</p>
-        </div>
-        <div>
-          <p className="text-xs">
-            Copyright © Julian Magra 2024 All rights Reserved
-          </p>
-        </div>
+      <section className="mt-40 ">
+        <Footer />
       </section>
     </main>
   );
