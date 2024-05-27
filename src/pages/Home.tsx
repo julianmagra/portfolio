@@ -61,7 +61,7 @@ const Homepage: FC = (): ReactElement => {
         id="experience"
         className="pt-10 p-2 interTypo flex flex-col lg:flex-row mt-10 flex-wrap"
       >
-        <div className="text-left ">
+        <div className="text-left mb-20">
           <h2 className="srcCodeTypo">Work experience</h2>
         </div>
         <ExperienceTimeline />
