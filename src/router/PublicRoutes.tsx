@@ -9,7 +9,7 @@ const PublicRoutes = () => {
   );
 
   return (
-    <div className=" container mx-auto  ">
+    <div className="mt-40 ">
       <Outlet />
     </div>
   );
