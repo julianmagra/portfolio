@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { SVG_ATTACH_PATH } from "../../assets/Attach";
 import { SVG_GHUB_PATH } from "../../assets/Github";
-import { CardProps } from "../layout/ProjectArea";
+import { CardProps } from "../layout/Project";
 
 const ProjectCard: React.FC<CardProps> = ({
   title,
@@ -12,7 +12,7 @@ const ProjectCard: React.FC<CardProps> = ({
 }) => {
   return (
     <div className="flex flex-col p-2 mt-10 mb-10 interTypo md:flex-row ">
-      <div className="xs: w-max  md:max-w-md p-4 ">
+      <div className="md:max-w-md p-4 ">
         <img
           className="rounded-2xl"
           src="../../../public/projectImage.jpg"
