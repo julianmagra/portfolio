@@ -11,8 +11,8 @@ const ProjectCard: React.FC<CardProps> = ({
   preview,
 }) => {
   return (
-    <div className="flex flex-col p-2 mt-10 mb-10 interTypo md:flex-row">
-      <div className="xs: min-w-0  md:max-w-md p-4 ">
+    <div className="flex flex-col p-2 mt-10 mb-10 interTypo md:flex-row ">
+      <div className="xs: w-max  md:max-w-md p-4 ">
         <img
           className="rounded-2xl"
           src="../../../public/projectImage.jpg"
