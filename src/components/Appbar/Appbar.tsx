@@ -1,6 +1,4 @@
 import { FC, ReactElement, useState } from "react";
-import { Link } from "react-router-dom";
-import { paths } from "../../constants/paths";
 import { SVG_MOON_PATH, SVG_SUN_PATH } from "../../assets/Darkmode";
 import { SVG_BAR_BUTTON } from "../../assets/BarButton";
 
@@ -11,7 +9,7 @@ const Appbar: FC = (): ReactElement => {
       <nav className="px-3 text-sm font-medium rounded-full text-gray-500 dark:text-gray-200  shadow-lg  shadow-gray-300 bg-white bg-opacity-80">
         <div className="flex mx-auto justify-between max-w-7xl items-center pl-5 pr-5">
           <div className="hidden lg:flex">
-            <a href="#experience" className=" py-2 px-4 hover:text-red-700">
+            <a href="#experience" className=" py-2 px-4 hover:text-red-700 ">
               Experience
             </a>
             <a href="#projects" className=" py-2 px-4 hover:text-red-700">
