@@ -1,6 +1,9 @@
 import { FC, ReactElement, useState } from "react";
-import { SVG_MOON_PATH, SVG_SUN_PATH } from "../../assets/Darkmode";
-import { SVG_BAR_BUTTON } from "../../assets/BarButton";
+import {
+  SVG_BAR_BUTTON,
+  SVG_MOON_PATH,
+  SVG_SUN_PATH,
+} from "../../assets/svg/SvgIcons";
 
 const Appbar: FC = (): ReactElement => {
   const [isDarkModeOn, setIsDarkModeOn] = useState(false);

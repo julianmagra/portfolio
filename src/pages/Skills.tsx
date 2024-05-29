@@ -1,7 +1,9 @@
 const Skills = () => {
   return (
     <div>
-      <h2>You can contact me filling the form below</h2>
+      <h1 className="font-bold text-5xl">
+        You can contact me filling the form below
+      </h1>
       <p>
         If you'd like to know more about my work environment and my way to do
         that i do.

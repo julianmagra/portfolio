@@ -2,8 +2,8 @@ const AboutMe = () => {
   return (
     <div className="p2">
       <h2 className="text-left srcCodeTypo">About me</h2>
-      <div className="flex flex-col-reverse md:flex-row  mt-10 p-2 interTypo ">
-        <div className="interTypo flex flex-col max-w-2xl p2 justify-evenly mr-6 ">
+      <div className="flex flex-col-reverse md:flex-row  mt-10 p-2">
+        <div className="flex flex-col max-w-2xl p2 justify-evenly mr-6 ">
           <p className="pt-4 ">
             Me llamo Miguel Ángel pero mis amigos me llaman midu. Empecé en la
             programación con un Amstrad, tenía 10 años. Actualmente estoy
