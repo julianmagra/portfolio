@@ -31,7 +31,7 @@ export function ExperienceTimeline() {
           },
         },
         point: {
-          horizontal: "flex  items-center",
+          horizontal: "flex items-center",
           line: "hidden h-0.5 w-full bg-black-500 dark:bg-gray-700 sm:flex",
           marker: {
             base: {
