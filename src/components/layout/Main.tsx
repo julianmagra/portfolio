@@ -31,7 +31,7 @@ const Main = () => (
           beneficial to the world at large.
         </p>
         <p className="text-left mt-6 text-xl text-gray-800 dark:text-gray-300 ">
-          See more and discover we can do a lot together!
+          See more and discover how much we can do together!
         </p>
       </div>
 

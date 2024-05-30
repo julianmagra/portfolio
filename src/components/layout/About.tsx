@@ -9,27 +9,31 @@ const AboutMe = () => {
       <div className="flex flex-col-reverse items-center md:flex-row   mt-10 p-2 ">
         <div className=" [&>p>strong]:text-yellow-300 dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty ">
           <p className="py-4">
-            Me llamo Miguel Ángel pero mis amigos me llaman midu. Empecé en la
-            programación con un Amstrad, tenía 10 años. Actualmente estoy&nbsp;
-            <strong>liderando equipos de desarrollo en multinacionales</strong>.
+            My name is Julian but my friends call me Juli. I started programming
+            with simple courses on youtube, I was 24 years old. I'm
+            currently&nbsp;
+            <strong>
+              part of the development team at Swiss Medical Group.
+            </strong>
+            .
           </p>
           <p className="py-4">
-            Algunos de mis éxitos incluyen&nbsp;
+            Some of my successes include&nbsp;
             <strong>
-              colaborar con Mozilla para el desarrollo de las primeras apps en
-              su sistema FirefoxOS
+              collaborating with the development of user self-management apps at
+              Swiss Medical Group
             </strong>
-            . Aunque hoy está desaparecido fue un gran avance en el mundo del
-            desarrollo web.
+            . This was a great step forward in increasing productivity within
+            the company.
           </p>
           <p className="py-4">
-            Como creador de contenido,&nbsp;
+            As a web developer,&nbsp;
             <strong>
-              cuento con el canal de habla hispana más visto del mundo en la
-              categoría de Software & Game Development en Twitch
+              I have high expectations of being able to obtain greater and more
+              complex developments that continue to test me
             </strong>
-            . Mi objetivo es mejorar la empleabilidad de la comunidad hispana y
-            el acceso a contenido de calidad.
+            . My goal is to cover projects that have a direct impact on the
+            people's lives improving them.
           </p>
         </div>
         <div className=" px-10  md:block min-w-max">
