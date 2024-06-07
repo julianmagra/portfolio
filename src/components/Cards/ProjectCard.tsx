@@ -16,7 +16,7 @@ const ProjectCard: React.FC<CardProps> = ({
         {/* CUSTOMIZAR IMAGEN */}
         <img
           className="rounded-3xl object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
-          src="../../../public/projectImage.jpg"
+          src="../images/projectImage.jpg"
           alt="projectImage"
         />
       </div>

@@ -7,7 +7,7 @@ const Main = () => (
     <div>
       <div className=" flex items-center mb-5">
         <img
-          src="../../public/yo.jpeg"
+          src="../images/yo.jpeg"
           alt=""
           className="rounded-full mr-4 shadow-lg shadow-blue-100"
         />
@@ -54,15 +54,6 @@ const Main = () => (
         </Link>
       </div>
     </div>
-    <div className="mt-10 xl:mt-4 lg:mt-4">
-      <img
-        src="../../public/modul-monitor-with-programming-code-on-screen.png"
-        alt=""
-        className=" xl:w-full lg:w-full lg:h-full mx-auto"
-      />
-    </div>
-    {/* <p>Resume/CV</p>
-<p>Carrousel abajo exponiendo las redes.</p> */}
   </section>
 );
 export default Main;

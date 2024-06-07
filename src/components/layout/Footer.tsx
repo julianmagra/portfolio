@@ -1,4 +1,12 @@
+import { IoMdDownload } from "react-icons/io";
+import { Link } from "react-router-dom";
 const Footer = () => {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = `${import.meta.env.VITE_PUBLIC_URL}/pdf/JulianMagra.resume.pdf`;
+    link.download = "JulianMagra.resume.pdf";
+    link.click();
+  };
   return (
     /* corregir alineamiento footer  */
     <footer
@@ -10,12 +18,20 @@ const Footer = () => {
           Copyright © Julian Magra 2024 All rights Reserved
         </p>
         <div className="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0">
-          <button className="text-md mr-8 hover:underline me-4 md:me-6">
+          <button
+            className="flex items-center text-md mr-8 hover:underline me-4 md:me-6"
+            onClick={handleDownload}
+          >
+            <IoMdDownload className="m-1" />
             Resume
           </button>
-          <button className="text-md hover:underline me-4 md:me-6">
+          <Link
+            target="_blank"
+            to={"https://www.linkedin.com/in/julianmagra"}
+            className="text-md hover:underline me-4 md:me-6"
+          >
             Contact
-          </button>
+          </Link>
         </div>
       </div>
     </footer>

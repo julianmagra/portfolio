@@ -12,9 +12,7 @@ const AboutMe = () => {
             My name is Julian but my friends call me Juli. I started programming
             with simple courses on youtube, I was 24 years old. I'm
             currently&nbsp;
-            <strong>
-              part of the development team at Swiss Medical Group.
-            </strong>
+            <strong>part of the development team at Swiss Medical Group</strong>
             .
           </p>
           <p className="py-4">
@@ -37,7 +35,7 @@ const AboutMe = () => {
           </p>
         </div>
         <div className=" px-10  md:block min-w-max">
-          <img className="rounded-xl" src="../../../public/me.jpg" alt="Me" />
+          <img className="rounded-xl" src="../images/me.jpg" alt="Me" />
         </div>
       </div>
     </section>
