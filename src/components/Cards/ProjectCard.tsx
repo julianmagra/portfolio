@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
-import { SVG_ATTACH_PATH } from "../../assets/Attach";
-import { SVG_GHUB_PATH } from "../../assets/Github";
 import { CardProps } from "../layout/Project";
+import { SVG_ATTACH_PATH, SVG_GHUB_PATH } from "../../assets/svg/SvgIcons";
 
 const ProjectCard: React.FC<CardProps> = ({
   title,
@@ -11,40 +10,45 @@ const ProjectCard: React.FC<CardProps> = ({
   preview,
 }) => {
   return (
-    <div className="flex flex-col p-2 mt-10 mb-10 interTypo md:flex-row ">
+    <div className="flex flex-col p-2 mt-10 mb-10 md:flex-row ">
       <div className="md:max-w-md p-4 ">
+        {/* VER QUE HACEN:  object-cover object-top transition duration-500 scale-110 group-hover:scale-105*/}
+        {/* CUSTOMIZAR IMAGEN */}
         <img
-          className="rounded-2xl"
-          src="../../../public/projectImage.jpg"
+          className="rounded-3xl object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
+          src="../images/projectImage.jpg"
           alt="projectImage"
         />
       </div>
       <div className=" flex-col text-left p-4">
-        <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">
+        <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100">
           {title}
         </h3>
-        <div className="flex flex-wrap mt-4">
+        <div className="flex flex-row gap-x-2">
           {techs.map((tech: string, i: number) => (
             <p
               key={i}
-              className="border bg-sky-600 rounded-2xl shadow-md text-gray-900 dark:text-white pl-1 pr-1 mr-1"
+              className="flex gap-x-2 rounded-full text-xs bg-black text-white py-1 px-2 "
             >
               {tech}
             </p>
           ))}
         </div>
-        <p className="mt-4">{description}</p>
-        <div className="flex flex-wrap mt-4">
+        <p className="mt-2 text-gray-700 dark:text-gray-400">{description}</p>
+        <div className="flex justify-start mt-4 gap-x-1">
+          {/*
+          Ver que hace cada cosa y hacer por mi mismo:
+          focus-visible:ring-yellow-500/80  hover:bg-gray-800 hover:border-gray-900 group max-w-fit  hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black */}
           <Link
             to={ghub}
-            className="flex border bg-gray-600 rounded-2xl shadow-md text-gray-900 dark:text-white p-3 mr-2"
+            className="flex items-center justify-center gap-2 px-3 py-2 rounded-xl text-md text-white transition bg-gray-800 border border-gray-600"
           >
             <SVG_GHUB_PATH />
             Code
           </Link>
           <Link
             to={preview}
-            className="flex border bg-gray-600 rounded-2xl shadow-md text-gray-900 dark:text-white p-3  ml-2"
+            className="flex items-center justify-center gap-2 px-3 py-2 rounded-xl text-md text-white transition bg-gray-800 border border-gray-600"
           >
             <SVG_ATTACH_PATH />
             Preview
