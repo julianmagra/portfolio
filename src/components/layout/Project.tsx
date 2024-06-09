@@ -1,5 +1,5 @@
 import ProjectCard from "../Cards/ProjectCard";
-
+import { FaCode } from "react-icons/fa";
 export interface CardProps {
   title: string;
   techs: string[];
@@ -9,6 +9,8 @@ export interface CardProps {
 }
 
 const PROJECTS: CardProps[] = [
+  /* agregar icons en las tech */
+  /* agregar image en las tech */
   {
     title: "SVGL - A beautiful library with SVG logos",
     techs: ["React JS", "Tailwind"],
@@ -28,9 +30,12 @@ const PROJECTS: CardProps[] = [
 ];
 
 const ProjectArea = () => (
-  <div>
+  <section id="projects" className="mt-20 p-2">
     <div className="text-left">
-      <h2 className="srcCodeTypo">Project</h2>
+      <h2 className="text-3xl font-semibold gap-x-3 text-black/80 dark:text-white flex items-center">
+        <FaCode className="" />
+        Project
+      </h2>
     </div>
     {PROJECTS.map((project, index) => (
       <ProjectCard
@@ -42,6 +47,6 @@ const ProjectArea = () => (
         preview={project.preview}
       />
     ))}
-  </div>
+  </section>
 );
 export default ProjectArea;
