@@ -6,9 +6,8 @@ import PublicRoutes from "./router/PublicRoutes";
 const App = () => {
   return (
     <div className="min-h-screen flex flex-col bg-white  dark:bg-blue-950 ">
-      {/* Barra de navegación */}
+      {/* cambiar hoover en appbar */}
       <Flowbite>
-        {/* <DarkThemeToggle /> */}
         <Appbar />
 
         {/* Contenedor principal */}
