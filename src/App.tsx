@@ -19,7 +19,3 @@ const App = () => {
 };
 
 export default App;
-
-{
-  /* Contenedor principal */
-}

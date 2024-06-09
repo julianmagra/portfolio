@@ -38,7 +38,7 @@ const Main = () => (
         <Link
           target="_blank"
           to={"https://www.instagram.com/julianmagra"}
-          className="px-4 py-1 rounded-xl  shadow-md  border border-gray-300 mr-2 flex items-center"
+          className="px-4 py-1 rounded-xl  shadow-md mr-2 flex items-center text-blue-100 bg-blue-900 hover:bg-blue-800"
         >
           <FaInstagram className="m-1" />
           Instagram
@@ -46,7 +46,7 @@ const Main = () => (
         <Link
           target="_blank"
           to={"https://www.linkedin.com/in/julianmagra"}
-          className="px-4 py-1 rounded-xl  shadow-md  border border-gray-300 mr-2 flex items-center"
+          className="px-4 py-1 rounded-xl  shadow-md mr-2 flex items-center text-blue-100 bg-blue-900 hover:bg-blue-800 "
         >
           <CiLinkedin className="m-1" />
           Linkedin

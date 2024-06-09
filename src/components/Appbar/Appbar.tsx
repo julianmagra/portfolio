@@ -21,17 +21,29 @@ const Appbar: FC = (): ReactElement => {
       <nav className="px-3 text-sm font-medium rounded-full text-gray-500 dark:text-gray-200  shadow-lg  shadow-gray-300 bg-white bg-opacity-80">
         <div className="flex mx-auto justify-between max-w-7xl items-center pl-5 pr-5">
           <div className="hidden lg:flex">
-            <a href="#experience" className=" py-2 px-4 hover:text-red-700 ">
+            <a
+              href="#experience"
+              className=" py-2 px-4 hover:text-yellow-300 dark:hover:text-yellow-100 "
+            >
               Experience
             </a>
-            <a href="#projects" className=" py-2 px-4 hover:text-red-700">
+            <a
+              href="#projects"
+              className=" py-2 px-4 hover:text-yellow-300 dark:hover:text-yellow-100"
+            >
               Projects
             </a>
-            <a href="#aboutme" className=" py-2 px-4 hover:text-red-700">
+            <a
+              href="#aboutme"
+              className=" py-2 px-4 hover:text-yellow-300 dark:hover:text-yellow-100"
+            >
               About me
             </a>
 
-            <a href="#contact" className=" py-2 px-4 hover:text-red-700 ">
+            <a
+              href="#contact"
+              className=" py-2 px-4 hover:text-yellow-300 dark:hover:text-yellow-100 "
+            >
               Contact
             </a>
           </div>
