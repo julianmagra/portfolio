@@ -8,7 +8,6 @@ const Footer = () => {
     link.click();
   };
   return (
-    /* corregir alineamiento footer  */
     <footer
       className="opacity-80 m-4 mt-16 w-full mx-auto lg:max-w-4xl md:max-w-2xl mb-10 flex justify-center  "
       id="contact"

@@ -29,6 +29,8 @@ const PROJECTS: CardProps[] = [
   },
 ];
 
+/* modify projects redirect links  */
+
 const ProjectArea = () => (
   <section id="projects" className="mt-20 p-2">
     <div className="text-left">
