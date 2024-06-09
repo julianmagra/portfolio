@@ -21,7 +21,6 @@ const Main = () => (
         </Link>
       </div>
       <div className="text-left  lg:max-w-prose  ">
-        {/*     */}
         <h1 className="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white">
           Hey, I'm Julian
         </h1>

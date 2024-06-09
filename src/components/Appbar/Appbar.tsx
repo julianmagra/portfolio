@@ -6,7 +6,16 @@ import {
 } from "../../assets/svg/SvgIcons";
 
 const Appbar: FC = (): ReactElement => {
-  const [isDarkModeOn, setIsDarkModeOn] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+    if (isDarkMode) {
+      document.documentElement.classList.remove("dark");
+    } else {
+      document.documentElement.classList.add("dark");
+    }
+  };
   return (
     <div className="fixed  flex justify-center w-full  mt-2">
       <nav className="px-3 text-sm font-medium rounded-full text-gray-500 dark:text-gray-200  shadow-lg  shadow-gray-300 bg-white bg-opacity-80">
@@ -29,13 +38,9 @@ const Appbar: FC = (): ReactElement => {
 
           {/*  TAREA FUTURA: REDUCIR A UN SOLO BOTON QUE VARIE LOS SVG DEPENDIENDO DEL
         ESTADO. */}
-          <div className="flex ">
-            {(!isDarkModeOn && (
-              <button
-                onClick={() => {
-                  setIsDarkModeOn(!isDarkModeOn);
-                }}
-              >
+          <div className="flex">
+            {(!isDarkMode && (
+              <button onClick={toggleDarkMode}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -44,16 +49,12 @@ const Appbar: FC = (): ReactElement => {
                   stroke="currentColor"
                   className="w-6 h-6"
                 >
-                  {SVG_MOON_PATH}
+                  {SVG_SUN_PATH}
                 </svg>
               </button>
             )) ||
-              (isDarkModeOn && (
-                <button
-                  onClick={() => {
-                    setIsDarkModeOn(!isDarkModeOn);
-                  }}
-                >
+              (isDarkMode && (
+                <button onClick={toggleDarkMode}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -62,7 +63,7 @@ const Appbar: FC = (): ReactElement => {
                     stroke="currentColor"
                     className="w-6 h-6"
                   >
-                    {SVG_SUN_PATH}
+                    {SVG_MOON_PATH}
                   </svg>
                 </button>
               ))}
