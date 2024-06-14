@@ -8,7 +8,7 @@ import Experience from "../components/layout/Experience";
 //Check folder structure
 const Homepage: FC = (): ReactElement => {
   return (
-    <main className="flex flex-col max-w-5xl mx-auto p-5">
+    <main className="flex flex-col max-w-5xl mx-auto p-5 ">
       <Main />
       <Experience />
       <ProjectArea />
