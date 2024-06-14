@@ -9,23 +9,21 @@ export interface CardProps {
 }
 
 const PROJECTS: CardProps[] = [
-  /* agregar icons en las tech */
-  /* agregar image en las tech */
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "A beautiful new project",
     techs: ["React JS", "Tailwind"],
     description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con React y Tailwind CSS.",
-    ghub: "https://github.com/pheralb/svgl",
-    preview: "https://svgl.app/",
+      "Uno de los proyectos mas reconocidos realizado para las marcas más populares. +10k visitas al mes. Creado desde cero con React y Tailwind CSS.",
+    ghub: "",
+    preview: "",
   },
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "A beautiful new project",
     techs: ["React JS", "Tailwind"],
     description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con React y Tailwind CSS.",
-    ghub: "https://github.com/pheralb/svgl",
-    preview: "https://svgl.app/",
+      "Uno de los proyectos mas reconocidos realizado para las marcas más populares. +10k visitas al mes. Creado desde cero con React y Tailwind CSS.",
+    ghub: "",
+    preview: "",
   },
 ];
 
