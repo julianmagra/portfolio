@@ -13,7 +13,7 @@ const PROJECTS: CardProps[] = [
     title: "A beautiful new project",
     techs: ["React JS", "Tailwind"],
     description:
-      "Uno de los proyectos mas reconocidos realizado para las marcas más populares. +10k visitas al mes. Creado desde cero con React y Tailwind CSS.",
+      "One of the most recognized projects carried out for the most popular brands. +10k visits per month. Built from scratch with React and Tailwind CSS.",
     ghub: "",
     preview: "",
   },
@@ -21,7 +21,7 @@ const PROJECTS: CardProps[] = [
     title: "A beautiful new project",
     techs: ["React JS", "Tailwind"],
     description:
-      "Uno de los proyectos mas reconocidos realizado para las marcas más populares. +10k visitas al mes. Creado desde cero con React y Tailwind CSS.",
+      "One of the most recognized projects carried out for the most popular brands. +10k visits per month. Built from scratch with React and Tailwind CSS.",
     ghub: "",
     preview: "",
   },
