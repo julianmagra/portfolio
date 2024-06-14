@@ -6,8 +6,8 @@ const AboutMe = () => {
         <BsPersonCheckFill />
         About me
       </h2>
-      <div className="flex flex-col-reverse items-center md:flex-row   mt-10 p-2 ">
-        <div className=" [&>p>strong]:text-yellow-300 dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty ">
+      <div className="flex flex-col-reverse items-center md:flex-row text-gray-800 dark:text-blue-100 mt-10 p-2 ">
+        <div className=" [&>p>strong]:text-yellow-300 dark:[&>p>strong]:text-yellow-200 [&>p>strong]:font-normal [&>p>strong]:font-mono  ">
           <p className="py-4">
             My name is Julian but my friends call me Juli. I started programming
             with simple courses on youtube, I was 24 years old. I'm

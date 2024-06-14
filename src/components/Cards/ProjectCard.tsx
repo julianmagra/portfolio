@@ -21,34 +21,34 @@ const ProjectCard: React.FC<CardProps> = ({
         />
       </div>
       <div className=" flex-col text-left p-4">
-        <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100">
+        <h3 className="text-2xl font-bold text-gray-800 dark:text-white">
           {title}
         </h3>
         <div className="flex flex-row gap-x-2">
           {techs.map((tech: string, i: number) => (
             <p
               key={i}
-              className="flex gap-x-2 rounded-full text-xs bg-black text-white py-1 px-2 "
+              className="flex gap-x-2 rounded-full text-xs bg-blue-900 text-white dark:text-blue-100 py-1 px-2 "
             >
               {tech}
             </p>
           ))}
         </div>
-        <p className="mt-2 text-gray-700 dark:text-gray-400">{description}</p>
+        <p className="mt-2  text-gray-800 dark:text-blue-100 ">{description}</p>
         <div className="flex justify-start mt-4 gap-x-1">
           {/*
           Ver que hace cada cosa y hacer por mi mismo:
           focus-visible:ring-yellow-500/80  hover:bg-gray-800 hover:border-gray-900 group max-w-fit  hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black */}
           <Link
             to={ghub}
-            className="flex items-center justify-center gap-2 px-3 py-2 rounded-xl text-md text-white transition bg-gray-800 border border-gray-600"
+            className="flex items-center justify-center gap-2 px-3 py-2 rounded-xl text-md text-white transition dark:text-blue-100 bg-gray-800 border border-gray-600"
           >
             <SVG_GHUB_PATH />
             Code
           </Link>
           <Link
             to={preview}
-            className="flex items-center justify-center gap-2 px-3 py-2 rounded-xl text-md text-white transition bg-gray-800 border border-gray-600"
+            className="flex items-center justify-center gap-2 px-3 py-2 rounded-xl text-md text-white transition dark:text-blue-100  bg-gray-800 border border-gray-600"
           >
             <SVG_ATTACH_PATH />
             Preview

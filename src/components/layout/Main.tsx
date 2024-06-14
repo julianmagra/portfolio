@@ -21,7 +21,6 @@ const Main = () => (
         </Link>
       </div>
       <div className="text-left  lg:max-w-prose  ">
-        {/*     */}
         <h1 className="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white">
           Hey, I'm Julian
         </h1>
@@ -39,7 +38,7 @@ const Main = () => (
         <Link
           target="_blank"
           to={"https://www.instagram.com/julianmagra"}
-          className="px-4 py-1 rounded-xl  shadow-md  border border-gray-300 mr-2 flex items-center"
+          className="px-4 py-1 rounded-xl  shadow-md mr-2 flex items-center border border-gray-300 hover:shadow-lg dark:text-blue-100 dark:bg-blue-950 dark:hover:bg-blue-900 "
         >
           <FaInstagram className="m-1" />
           Instagram
@@ -47,7 +46,7 @@ const Main = () => (
         <Link
           target="_blank"
           to={"https://www.linkedin.com/in/julianmagra"}
-          className="px-4 py-1 rounded-xl  shadow-md  border border-gray-300 mr-2 flex items-center"
+          className="px-4 py-1 rounded-xl  shadow-md  mr-2 flex items-center border border-gray-300 hover:shadow-lg dark:text-blue-100 dark:bg-blue-950 dark:hover:bg-blue-900 "
         >
           <CiLinkedin className="m-1" />
           Linkedin

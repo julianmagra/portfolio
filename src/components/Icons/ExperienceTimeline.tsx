@@ -7,7 +7,7 @@ export function ExperienceTimeline() {
       root: {
         direction: {
           horizontal: "sm:flex",
-          vertical: "relative border-l border-gray-300  dark:border-gray-800",
+          vertical: "relative border-l border-gray-300  dark:border-gray-900",
         },
       },
       item: {
@@ -21,10 +21,10 @@ export function ExperienceTimeline() {
             base: " mt-3 sm:pr-8 ",
           },
           body: {
-            base: "mb-4 text-base font-normal text-gray-500 dark:text-gray-400 pb-4 text-gray-600 dark:text-gray-300",
+            base: "mb-4 text-base font-normal text-gray-500 dark:text-gray-400 pb-4 text-gray-600 dark:text-blue-100",
           },
           time: {
-            base: "m-0 p-0 text-sm font-normal leading-none text-gray-600/80 dark:text-white/80 ",
+            base: "m-0 p-0 text-sm font-normal leading-none text-gray-600/80 dark:text-blue-300 ",
           },
           title: {
             base: "text-xl font-semibold text-yellow-300 dark:text-white",
@@ -38,7 +38,7 @@ export function ExperienceTimeline() {
               horizontal:
                 "absolute -left-1.5 h-3 w-3 rounded-full border border-yellow-200 bg-yellow-200 dark:border-gray-900 dark:bg-gray-700",
               vertical:
-                "absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-yellow bg-yellow-300 dark:border-gray-900 dark:bg-gray-700",
+                "absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-yellow bg-yellow-300 dark:border-yellow-200 dark:bg-yellow-200",
             },
             icon: {
               base: "h-3 w-3 text-cyan-600 dark:text-cyan-300",
