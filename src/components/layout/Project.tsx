@@ -20,7 +20,8 @@ const PROJECTS: CardProps[] = [
   {
     title: "Zappas",
     techs: ["React", "Express", "Css"],
-    description: "A beautiful shoe themed e-commerce.",
+    description:
+      "A beautiful shoe themed e-commerce. This ecommerce was developed in 2 weeks and it was made with 3 technologies React.js, Express.js and CSS.",
     ghub: "https://github.com/julianmagra/ecommerceZappas",
     preview: "",
   },
