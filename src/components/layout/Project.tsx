@@ -18,11 +18,10 @@ const PROJECTS: CardProps[] = [
     preview: "",
   },
   {
-    title: "A beautiful new project",
-    techs: ["React JS", "Tailwind"],
-    description:
-      "One of the most recognized projects carried out for the most popular brands. +10k visits per month. Built from scratch with React and Tailwind CSS.",
-    ghub: "",
+    title: "Zappas",
+    techs: ["React", "Express", "Css"],
+    description: "A beautiful shoe themed e-commerce.",
+    ghub: "https://github.com/julianmagra/ecommerceZappas",
     preview: "",
   },
 ];
