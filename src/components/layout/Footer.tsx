@@ -29,7 +29,7 @@ const Footer = () => {
             to={"https://www.linkedin.com/in/julianmagra"}
             className="text-md hover:underline me-4 md:me-6"
           >
-            Contact
+            Linkedin
           </Link>
         </div>
       </div>
